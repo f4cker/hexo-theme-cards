@@ -37,16 +37,14 @@ head:
     # - ''
 
 
+  # 显示在最上方 cover 处的站点名称
+  sitename: Layoute's Blog
 
-# ---------------------------------------------------------------
-# 导航栏/封面配置
-# ---------------------------------------------------------------
-
-# 顶部导航栏设置
-navbar: 
-
-  # 左侧名称显示
-  sitename: Demo
+  # 若设置 logo，则优先使用 logo 代替 sitename
+  logo: 
+  
+  # logo 下方的一句话介绍
+  description: 体面、优雅的写博客!
   
   # 右侧站内导航链接
   menu: 
@@ -54,12 +52,14 @@ navbar:
       url: /
     - name: 标签
       url: /tags/
+    - name: 分类
+      url: /categories/
     - name: 归档
       url: /archives/
-    - name: 友链
-      url: /friends/
-    - name: Page
-      url: /page/
+    # - name: 友链
+    #   url: /friends/
+    # - name: Page
+    #   url: /page/
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
@@ -138,8 +138,8 @@ meta:
   
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    name: ChrAlpha
-    url: https://chralpha.com
+    name: Layoute
+    url: https://www.layoute.top
   
   # 文章创建日期
   date:
@@ -182,6 +182,68 @@ meta:
 
 
 
+# ---------------------------------------------------------------
+# 布局设置
+# ---------------------------------------------------------------
+
+layout: 
+
+  # 首页/归档
+  meta: 
+    - excerpt
+    - thumbnail
+    - date
+    - categories
+    - tags
+
+  # 文章页
+  post: 
+    header:
+      - thumbnail
+      - date
+      - categories
+      - expire
+    footer: 
+      - copyright
+      - updated
+      - tags
+    side: 
+      - toc
+
+
+
+# ---------------------------------------------------------------
+# 优化/功能 插件
+# ---------------------------------------------------------------
+
+optimize: 
+
+  # 如需开启，请复制下段内容至站点配置文件中
+  lazyload:
+    enable: true
+    onlypost: false
+    loadingImg: 
+
+  # note 标签插件
+  note: 
+    enable: true
+
+  # 图片点击放大插件
+  fancybox: 
+    enable: false
+    auto: false
+    
+  # 返回顶部按钮
+  back_to_top: 
+    enable: true
+    smoothly: true
+
+  # 深色模式
+  darkmode: 
+    enable: true
+
+
+    
 # ---------------------------------------------------------------
 # 评论系统
 # ---------------------------------------------------------------
