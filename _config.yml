@@ -168,8 +168,8 @@ meta:
 
   # 文章目录
   toc: 
-    enable: false
-    list_number: false
+    enable: true
+    list_number: true
 
   # 文章版权声明
   copyright: 
