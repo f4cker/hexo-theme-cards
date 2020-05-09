@@ -249,7 +249,7 @@ optimize:
 # ---------------------------------------------------------------
 
 comments: 
-  use:   # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
+  enable: true 
 
   # Disqus
   disqus:  
