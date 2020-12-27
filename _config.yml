@@ -37,14 +37,15 @@ head:
     # - ''
 
 
-  # 显示在最上方 cover 处的站点名称
-  sitename: Layoute's Blog
+# ---------------------------------------------------------------
+# 导航栏/封面配置
+# ---------------------------------------------------------------
 
-  # 若设置 logo，则优先使用 logo 代替 sitename
-  logo: 
-  
-  # logo 下方的一句话介绍
-  description: 体面、优雅的写博客!
+# 顶部导航栏设置
+navbar: 
+
+  # 左侧名称显示
+  sitename: Layoute's Blog
   
   # 右侧站内导航链接
   menu: 
@@ -63,13 +64,13 @@ head:
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
-  sticky: false
+  sticky: true
 
 # 封面 cover 设置
 cover: 
 
   # 显示在最上方 cover 处的站点名称
-  sitename: Demo
+  sitename: Layoute's Blog
 
   # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
   avatar: 
@@ -153,7 +154,7 @@ meta:
 
   # 文章缩略图
   thumbnail: 
-    enable: false
+    enable: true
     default:   # 默认缩略图，当页面 `thumbnail` 字段为空时 fallback 至此参数
 
   # 文章过时提醒
@@ -169,7 +170,7 @@ meta:
   # 文章目录
   toc: 
     enable: true
-    list_number: true
+    list_number: false
 
   # 文章版权声明
   copyright: 
@@ -177,7 +178,7 @@ meta:
     
     # 在作者声明和永久链接之后，可以多行，支持 markdown
     custom_text:
-      # - ''
+      - '文章默认使用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 协议进行许可，使用时请注意遵守协议。'
       # - ''
 
 
@@ -209,40 +210,6 @@ layout:
       - tags
     side: 
       - toc
-
-
-
-# ---------------------------------------------------------------
-# 优化/功能 插件
-# ---------------------------------------------------------------
-
-optimize: 
-
-  # 如需开启，请复制下段内容至站点配置文件中
-  lazyload:
-    enable: true
-    onlypost: true
-    loadingImg: 
-
-  # note 标签插件
-  note: 
-    enable: true
-
-  # 图片点击放大插件
-  fancybox: 
-    enable: false
-    auto: false
-    
-  # 返回顶部按钮
-  back_to_top: 
-    enable: true
-    smoothly: true
-
-  # 深色模式
-  darkmode: 
-    enable: true
-
-
     
 # ---------------------------------------------------------------
 # 评论系统
@@ -433,12 +400,12 @@ lazyload:
 
 # 站内搜索插件
 search:
-  enable: false
+  enable: true
   path: search.json
   field: All  # Page | Post | All
 
 # note 标签插件
-note: false
+note: true
 
 # fold 内容折叠插件
 fold: 
@@ -448,14 +415,14 @@ fold:
 
 # 图片点击放大插件
 fancybox: 
-  enable: false
-  auto: false
+  enable: true
+  auto: true
   
 # 返回顶部
-back_to_top: false
+back_to_top: true
 
 # 深色模式
-darkmode: false
+darkmode: true
 
 
 
